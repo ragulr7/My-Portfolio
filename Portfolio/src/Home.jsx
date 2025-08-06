@@ -7,7 +7,7 @@ function Home() {
     <div>
 <div className="flex justify-between items-center px-4 py-3 bg-black text-blue-900 text-2xl md:text-3xl font-bold shadow-md cursor-pointer">
         <p className="hover:text-amber-200" onClick={Home}>Home</p>
-        <p className="hover:text-amber-200" >About</p>
+        <p className="hover:text-amber-200" onClick={About}>About</p>
         <p className="hover:text-amber-200">Projects</p>
         <p className="hover:text-amber-200">Contact</p>
       </div>
@@ -26,7 +26,7 @@ function Home() {
     <p className="p-5 ">Born : 22/04/2004</p>
     <p> contact :123456780</p>
     <p>Email :aefeef</p>
-    </div>
+    </div> 
     </div>
   );
 }
