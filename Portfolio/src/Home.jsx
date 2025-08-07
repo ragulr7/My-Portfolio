@@ -1,6 +1,7 @@
 import React from "react";
 import pic from "./assets/ragul.jpg";
 import to from "./assets/To-do.png";
+import le from "./assets/leave.png";
 
 function Home() {
   return (
@@ -114,8 +115,8 @@ function Home() {
          <p className="text-center mt-2 font-bold text-2xl  text-red-700">To-Do List</p>
 </span>
     <img
-   src={to}
-  alt="To-do"
+   src={le}
+  alt="Leave Management"
   className="rounded w-90 h-70 mt-3 cursor-pointer hover:scale-105 transition-transform duration-300"
   onClick={() => window.open("https://github.com/ragulr7/ToDoList", "_blank")}
    /> 
