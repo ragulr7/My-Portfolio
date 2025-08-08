@@ -2,7 +2,9 @@ import React from "react";
 import pic from "./assets/ragul.jpg";
 import to from "./assets/To-do.png";
 import le from "./assets/leave.png";
-
+import sb from "./assets/smartbin.png";
+import ja from "./assets/java.png"; 
+import cc from "./assets/cloud.png";
 function Home() {
   return (
     <div className="flex h-screen font-sans"> 
@@ -25,6 +27,7 @@ function Home() {
             
         <a href="#Home" className="hover:text-amber-200">Home</a>
         <a href="#About" className="hover:text-amber-200">About</a>
+        <a href="#Education" className="hover:text-amber-200">Education</a>
         <a href="#Projects" className="hover:text-amber-200">Projects</a>
         <a href="#Contact" className="hover:text-amber-200">Contact</a>
       </nav>
@@ -97,7 +100,91 @@ function Home() {
     </div>
   </div>
 </section>
+<section id="Education">
+<div className="bg-gradient-to-b from-gray-950 to-gray-900 px-4 sm:px-6 py-20 text-white">
+  <p className="text-4xl text-green-800 font-extrabold text-center mb-12">Education</p>
 
+  <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <div className="bg-[#02142B] rounded-xl overflow-hidden shadow-lg w-full text-white">
+      <img
+        src="https://media.licdn.com/dms/image/v2/D4E0BAQFNy_01KOyhyA/company-logo_200_200/company-logo_200_200/0/1685594322324/pmhssalumni_logo?e=2147483647&v=beta&t=jKEOpzmZU7D9JyCTZWsY8gDgZRdPJ57YNnMzvAkgUMo"
+        alt="School Logo"
+        className="w-full h-48 object-contain bg-white"
+      />
+      <div className="p-4 space-y-2">
+        <p className="text-sm italic text-gray-300">SSLC</p>
+        <p className="text-lg font-semibold">July 2018 - May 2019</p>
+        <p className="text-lg font-semibold">Percentage - <span className="text-cyan-400">79%</span></p>
+      </div>
+    </div>
+
+    
+    <div className="bg-[#02142B] rounded-xl overflow-hidden shadow-lg w-full text-white">
+      <img
+        src="https://media.licdn.com/dms/image/v2/D4E0BAQFNy_01KOyhyA/company-logo_200_200/company-logo_200_200/0/1685594322324/pmhssalumni_logo?e=2147483647&v=beta&t=jKEOpzmZU7D9JyCTZWsY8gDgZRdPJ57YNnMzvAkgUMo"
+        alt="School Logo"
+        className="w-full h-48 object-contain bg-white"
+      />
+      <div className="p-4 space-y-2">
+        <p className="text-sm italic text-gray-300">HSC - Computer Science</p>
+        <p className="text-lg font-semibold">July 2020 - May 2021</p>
+        <p className="text-lg font-semibold">Percentage - <span className="text-cyan-400">89%</span></p>
+      </div>
+    </div>
+
+    <div className="bg-[#02142B] rounded-xl overflow-hidden shadow-lg w-full text-white">
+      <img
+        src="https://prayalabs.com/sites/default/files/ngp.png"
+        alt="College Logo"
+        className="w-full h-48 object-contain bg-white"
+      />
+      <div className="p-4 space-y-2">
+        <p className="text-sm italic text-gray-300">B.Tech Information Technology</p>
+        <p className="text-lg font-semibold">November 2021 - April 2025</p>
+        <p className="text-lg font-semibold">CGPA - <span className="text-cyan-400">7.5</span></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+<div className="bg-gradient-to-b from-gray-950 to-gray-900 px-4 sm:px-6 py-20 text-white">
+  <p className="text-4xl text-white font-extrabold text-center mb-12">Online Certification</p>
+
+  <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+   
+
+    
+    <div className="bg-[#02142B] rounded-xl overflow-hidden shadow-lg w-full cursor-pointer text-white">
+      <img
+        src={ja}
+        alt="NPTEL Logo"
+        className="w-full h-48 object-contain bg-white flex  hover:scale-110 transition-transform duration-300"
+      />
+       
+
+    </div>
+     <div className="bg-[#02142B] rounded-xl overflow-hidden shadow-lg w-full text-white">
+      <img
+        src="https://d2lk14jtvqry1q.cloudfront.net/media/small_Vellore_Institute_of_Technology_Business_School_VIT_BS_54186d8069_26f401a9aa_b4584782bc_2c9b4d4396.png"
+        alt="VIT Logo"
+        className="w-full h-48 object-contain bg-white"
+      />
+    </div>
+
+    <div className="bg-[#02142B] rounded-xl overflow-hidden shadow-lg w-full text-white">
+      <img
+        src={cc}
+        alt="Cloud Logo"
+        className="w-full h-48 object-contain bg-white"
+      />
+     
+    </div>
+
+  </div>
+</div>
       <section id="Projects" className="relative min-h-screen bg-black px-6 py-12">
   <p className="text-4xl sm:text-5xl font-extrabold text-blue-500 mb-6">Projects</p>
   
@@ -114,18 +201,27 @@ function Home() {
    /> 
          <p className="text-center mt-2 font-bold text-2xl  text-red-700">To-Do List</p>
 </span>
+<span>
     <img
    src={le}
   alt="Leave Management"
   className="rounded w-90 h-70 mt-3 cursor-pointer hover:scale-105 transition-transform duration-300"
-  onClick={() => window.open("https://github.com/ragulr7/ToDoList", "_blank")}
+  onClick={() => window.open("https://github.com/ragulr7/Leave", "_blank")}
    /> 
+       <p className="text-center mt-2 font-bold text-2xl  text-red-700">Leave Management</p>
+
+   </span>
+   <span>
+
  <img
-   src={to}
-  alt="To-do"
-  className="rounded w-90 h-70 mt-3 cursor-pointer hover:scale-105 transition-transform duration-300"
-  onClick={() => window.open("https://github.com/ragulr7/ToDoList", "_blank")}
+   src={sb}
+   alt="Smart Bin"
+   className="rounded w-90 h-70 mt-3 cursor-pointer hover:scale-105 transition-transform duration-300 "
+   onClick={() => window.open("https://github.com/ragulr7/Smart-Bin", "_blank")}
    /> 
+            <p className="text-center mt-2 font-bold text-2xl  text-red-700">Smart Bin</p>
+
+   </span>
   </div>
 </section>
 
