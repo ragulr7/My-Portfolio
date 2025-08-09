@@ -27,6 +27,7 @@ function Home() {
             
         <a href="#Home" className="hover:text-amber-200">Home</a>
         <a href="#About" className="hover:text-amber-200">About</a>
+        <a href="#Skills" className="hover:text-amber-200">Skills</a>
         <a href="#Education" className="hover:text-amber-200">Education</a>
         <a href="#Projects" className="hover:text-amber-200">Projects</a>
         <a href="#Contact" className="hover:text-amber-200">Contact</a>
@@ -81,24 +82,45 @@ function Home() {
         </ul>
       </div>
     </div>
+  </div>
 
-    <div className="col-span-1 md:col-span-2 mt-8">
-      <p className="text-3xl text-cyan-300 mb-4 text-center">Skills</p>
-      <div className="flex flex-col sm:flex-row justify-evenly items-start sm:items-center">
-        <ul className="list-disc list-inside text-gray-400 mb-4 sm:mb-0 sm:mr-8">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-        </ul>
-        <ul className="list-disc list-inside text-gray-400">
-          <li>Java</li>
-          <li>SQL</li>
-          <li>GitHub</li>
-        </ul>
+  
+</section>
+<section id="Skills" >
+<div className=" px-4 bg-black">
+  <h2 className="text-3xl font-bold mb-8 text-center text-white">Technical Skills</h2>
+  <div className="mb-10 border-b border-[#02142B] pb-6">
+    <h3 className=" font-semibold mb-4 text-transform: uppercase text-white">Programming Languages</h3>
+    <div className="flex flex-wrap justify-center gap-8">
+        <div className="flex items-center space-x-2">
+        <img src="https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png" className="h-20" alt="Java" />
       </div>
+      <div className="flex items-center space-x-2">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/027/127/463/small_2x/javascript-logo-javascript-icon-transparent-free-png.png" className="h-20" alt="JavaScript" />
+      </div>
+    
+     
     </div>
   </div>
+
+  <div className=" border-b border-[#02142B] pb-6">
+    <h3 className="font-semibold mb-4 text-transform: uppercase text-white">Front-End Technologies</h3>
+    <div className="flex flex-wrap justify-center gap-8">
+     <div className="flex items-center space-x-2">
+        <img src="https://www.scmgalaxy.com/tutorials/wp-content/uploads/2021/07/etIjZH1615704154.png" className="h-20" alt="HTML" />
+      </div>
+      <div className="flex items-center space-x-2">
+        <img src="https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png" className="h-20" alt="css" />
+      </div>
+       <div className="flex items-center space-x-2">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*MF5V_dkybUTcfzwHFh0VSw.jpeg" className="h-20" alt="React" />
+        <span className="text-lg">React.js</span>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
 </section>
 <section id="Education">
 <div className="bg-gradient-to-b from-gray-950 to-gray-900 px-4 sm:px-6 py-20 text-white">
@@ -157,29 +179,51 @@ function Home() {
    
 
     
-    <div className="bg-[#02142B] rounded-xl overflow-hidden shadow-lg w-full cursor-pointer text-white">
-      <img
-        src={ja}
-        alt="NPTEL Logo"
-        className="w-full h-48 object-contain bg-white flex  hover:scale-110 transition-transform duration-300"
-      />
+   <div className="relative group bg-[#02142B] rounded-xl overflow-hidden shadow-lg w-full cursor-pointer hover:scale-105 transition-transform duration-300">
+  
+  <img
+    src={ja}
+    alt="NPTEL Logo"
+    className="w-full h-48 object-contain bg-white "
+  />
+
+  <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col items-center justify-center opacity-0 group-hover:opacity-40 transition duration-300">
+    <p className="text-white font-semibold text-lg">Programming In Java</p>
+    <a href="https://drive.google.com/file/d/1ZSXxpfy9jBKJxqTvx7rVjYeEwrNgG2V_/view?usp=drive_link"  target="_blank"className="text-white text-2xl mt-2">🔗</a>
+  </div>
+
+ 
+</div>
+
        
 
-    </div>
-     <div className="bg-[#02142B] rounded-xl overflow-hidden shadow-lg w-full text-white">
-      <img
-        src="https://d2lk14jtvqry1q.cloudfront.net/media/small_Vellore_Institute_of_Technology_Business_School_VIT_BS_54186d8069_26f401a9aa_b4584782bc_2c9b4d4396.png"
-        alt="VIT Logo"
-        className="w-full h-48 object-contain bg-white"
-      />
-    </div>
+   
+   <div className="relative group bg-[#02142B] rounded-xl overflow-hidden shadow-lg w-full cursor-pointer hover:scale-105 transition-transform duration-300 text-white">
+  <img
+    src="https://d2lk14jtvqry1q.cloudfront.net/media/small_Vellore_Institute_of_Technology_Business_School_VIT_BS_54186d8069_26f401a9aa_b4584782bc_2c9b4d4396.png"
+    alt="VIT Logo"
+    className="w-full h-48 object-contain bg-white transition-transform duration-500 group-hover:scale-105"
+  />
 
-    <div className="bg-[#02142B] rounded-xl overflow-hidden shadow-lg w-full text-white">
+  <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col items-center justify-center opacity-0 group-hover:opacity-40 transition-opacity duration-300">
+    <p className="text-white font-semibold text-lg">VIT</p>
+    <a href="https://drive.google.com/file/d/1fIgkYYnMYMpQxCpVH7ex0WrPie5yn2Bg/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="text-white text-2xl mt-2">🔗</a>
+  </div>
+
+ 
+</div>
+
+
+    <div className=" relative group  bg-[#02142B] rounded-xl overflow-hidden shadow-lg w-full text-white">
       <img
         src={cc}
         alt="Cloud Logo"
         className="w-full h-48 object-contain bg-white"
       />
+      <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col items-center justify-center opacity-0 group-hover:opacity-40 transition-opacity duration-300">
+    <p className="text-white font-semibold text-lg">Cloud</p>
+    <a href="https://drive.google.com/file/d/1ZRFwVwc9XZF57UG6t3H1pa-je-oAEoek/view?usp=drive_link" target="_blank" className="text-white text-2xl mt-2">🔗</a>
+  </div>
      
     </div>
 
