@@ -1,5 +1,6 @@
 import React from "react";
 import pic from "./assets/ragul.jpg";
+import photo from "./assets/me.jpg";
 import to from "./assets/To-do.png";
 import le from "./assets/leave.png";
 import sb from "./assets/smartbin.png";
@@ -17,12 +18,10 @@ function Home() {
             /> 
     <p className="text-3xl ">Ragul B</p>
   <div className="flex justify-evenly">
-  <a href="https://www.linkedin.com/in/ragul-b-05448b248/" target="_blank" >
-    <img src="https://blakeoliver.com.au/wp-content/uploads/2023/06/vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930585_835-1536x1536.png" className="h-9 w-9 rounded-full hover:scale-110 transition" />
-  </a>
-  <a href="https://github.com/ragulr7" target="_blank"> 
-  <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" className="h-9 w-9 rounded-full hover:scale-110 transition" />
-  </a>
+  
+   
+
+
     </div>  
             
         <a href="#Home" className="hover:text-amber-200">Home</a>
@@ -230,44 +229,124 @@ function Home() {
   </div>
 </div>
       <section id="Projects" className="relative min-h-screen bg-black px-6 py-12">
-  <p className="text-4xl sm:text-5xl font-extrabold text-blue-500 mb-6">Projects</p>
+  <p className="text-4xl sm:text-5xl font-extrabold text-center text-blue-500 mb-6">Projects</p>
   
   <p className="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed max-w-4xl">
     In project development and implementation, I orchestrate ideas into functional solutions, navigating the entire lifecycle. I meticulously plan, code, and deploy, ensuring seamless execution. Adaptable and detail-oriented, I thrive on transforming concepts into tangible, user-friendly applications. My approach blends innovation with efficiency, resulting in impactful digital experiences that meet and exceed expectations. Let's embark on a journey of turning vision into reality through effective project development and implementation.
   </p>
   <div className=" flex justify-center items-center gap-4 mt-8 flex-wrap">
-    <span>
+    <span className="relative group">
  <img
    src={to}
   alt="To-do"
   className="rounded w-90 h-70 mt-3 cursor-pointer hover:scale-105 transition-transform duration-300"
-  onClick={() => window.open("https://github.com/ragulr7/ToDoList", "_blank")}
    /> 
          <p className="text-center mt-2 font-bold text-2xl  text-red-700">To-Do List</p>
+          <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col items-center justify-center opacity-0 group-hover:opacity-40 transition duration-300">
+    <p className="text-white font-semibold text-lg">To-Do List</p>
+    <a href="https://github.com/ragulr7/ToDoList"  target="_blank"className="text-white text-2xl mt-2">🔗</a>
+  </div>
 </span>
-<span>
+<span className="relative group">
     <img
    src={le}
   alt="Leave Management"
   className="rounded w-90 h-70 mt-3 cursor-pointer hover:scale-105 transition-transform duration-300"
-  onClick={() => window.open("https://github.com/ragulr7/Leave", "_blank")}
    /> 
        <p className="text-center mt-2 font-bold text-2xl  text-red-700">Leave Management</p>
-
+ <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col items-center justify-center opacity-0 group-hover:opacity-40 transition duration-300">
+    <p className="text-white font-semibold text-lg">Leave Management</p>
+    <a href="https://github.com/ragulr7/Leave"  target="_blank"className="text-white text-2xl mt-2">🔗</a>
+  </div>
    </span>
-   <span>
+   <span className="relative group">
 
  <img
    src={sb}
    alt="Smart Bin"
    className="rounded w-90 h-70 mt-3 cursor-pointer hover:scale-105 transition-transform duration-300 "
-   onClick={() => window.open("https://github.com/ragulr7/Smart-Bin", "_blank")}
    /> 
             <p className="text-center mt-2 font-bold text-2xl  text-red-700">Smart Bin</p>
-
+ <div className="absolute inset-0 bg-black bg-opacity-10 flex flex-col items-center justify-center opacity-0 group-hover:opacity-40 transition duration-300">
+    <p className="text-white font-semibold text-lg">Smart-Bin</p>
+    <a href="https://github.com/ragulr7/Smart-Bin"  target="_blank"className="text-white text-2xl mt-2">🔗</a>
+  </div>
    </span>
   </div>
 </section>
+<section id="Contact" className="bg-gradient-to-b from-gray-900 to-gray-800 px-4 sm:px-6 py-20 text-white">
+  <p className="text-5xl sm:text-4xl font-extrabold text-amber-500 text-center">Contact</p>
+  <p className="text-lg sm:text-xl text-gray-300 mt-4 mb-8 text-transform: uppercase text-center">
+    Feel free to reach out for collaborations, inquiries, or just a friendly chat!</p>
+   <div className="grid grid-cols-1 md:grid-cols-2 gap-6  ">
+     <div className="bg-blue-950 flex items-center space-x-4 p-6 w-80 rounded-lg">
+    <img 
+      src="https://static.vecteezy.com/system/resources/thumbnails/014/440/980/small_2x/email-message-icon-design-in-blue-circle-png.png" 
+      className="h-12 w-12" 
+      alt="Email Icon" 
+    />
+    <div>
+      <p className="text-green-600 font-bold text-lg">Email</p>
+      <p className="text-white">ragul@gmail.com</p>
+    </div>
+  </div>
+
+  <div className="bg-blue-950 flex items-center space-x-4 p-6 rounded-lg w-80">
+    <img 
+      src="https://static.vecteezy.com/system/resources/thumbnails/014/441/078/small/phone-call-icon-design-in-blue-circle-png.png" 
+      className="h-12 w-12" 
+      alt="Contact Icon" 
+    />
+    <div>
+      <p className="text-green-600 font-bold text-lg">Contact</p>
+      <p className="text-white">+91 23456789</p>
+    </div>
+  </div>
+
+
+  <div className="bg-blue-950 flex items-start space-x-4 p-6 w-80 rounded-lg">
+    <img 
+      src="https://static.vecteezy.com/system/resources/thumbnails/014/576/658/small_2x/check-in-location-icon-in-blue-circle-png.png" 
+      className="h-12 w-12" 
+      alt="Location Icon" 
+    />
+    <div>
+      <p className="text-green-600 font-bold text-lg">My Address</p> 
+      <br></br> 
+      <p className="text-white">Dharapuram</p>
+      <p className="text-white">Tirupur, 638672</p>
+    </div>
+  </div>
+
+ 
+  <div className="bg-blue-950 flex flex-col p-6 w-80 rounded-lg">
+    <div className="flex items-center space-x-4 mb-4">
+      <img 
+        src="https://icon-library.com/images/sharing-icon-png/sharing-icon-png-14.jpg" 
+        className="h-12 w-12" 
+        alt="Social Icon" 
+      />
+      <p className="text-green-600 font-bold text-lg">Social Profiles</p>
+    </div>
+    <div className="flex space-x-4 pl-14">
+      <a href="https://www.linkedin.com/in/ragul-b-05448b248/" target="_blank" rel="noopener noreferrer">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-linkedin-circle-1868976-1583140.png?f=webp" className="h-10 w-10" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/ragulr7" target="_blank" rel="noopener noreferrer">
+        <img src="https://i.pinimg.com/564x/5c/2b/c5/5c2bc53db08acad9c2c1162e5cfd87ba.jpg" className="h-10 w-10" alt="GitHub" />
+      </a>
+      <a href="https://www.instagram.com/i_am_ragul_7/" target="_blank" rel="noopener noreferrer">
+        <img src="https://www.seekpng.com/png/full/283-2831855_insta-icon-circle-ltblue-instagram-icon-in-white.png" className="h-10 w-10" alt="Google" />
+      </a>
+    </div>
+  </div>
+
+
+ 
+</div>
+
+
+  </section>
 
 
       
