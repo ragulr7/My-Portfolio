@@ -30,6 +30,7 @@ function Home() {
         <a href="#Education" className="hover:text-amber-200">Education</a>
         <a href="#Projects" className="hover:text-amber-200">Projects</a>
         <a href="#Contact" className="hover:text-amber-200">Contact</a>
+        <a href="https://drive.google.com/file/d/1DFPX5nnZRv0htLQD849ZrXEMt2php7xr/view?usp=drive_link" target="_blank" className="hover:text-amber-200">Resume</a>
       </nav>
 
       <main className="w-3/4 md:w-4/5 overflow-y-auto">
