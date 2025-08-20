@@ -5,7 +5,7 @@ import to from "./assets/To-do.png";
 import le from "./assets/leave.png";
 import sb from "./assets/smartbin.png";
 import ja from "./assets/java.png"; 
-import cc from "./assets/cloud.png";
+import cc from "./assets/cloud.png"; 
 function Home() {
   return (
     <div className="flex h-screen font-sans"> 
