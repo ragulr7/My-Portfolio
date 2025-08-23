@@ -5,6 +5,7 @@ import le from "./assets/leave.png";
 import sb from "./assets/smartbin.png";
 import ja from "./assets/java.png"; 
 import cc from "./assets/cloud.png"; 
+import ej from "./assets/E-jersey.png"
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -75,17 +76,15 @@ function Home() {
         </a>
       </div>
 
-      {/* Main Content */}
       <main className="flex-1 overflow-y-auto">
 
-        {/* Home Section */}
         <section id="Home" className="relative h-screen">
           <img
             src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?fm=jpg&q=60&w=3000"
             alt="Background"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-2xl sm:text-4xl font-bold space-y-4">
+          <div className="absolute inset-0  bg-opacity-50 flex flex-col items-center justify-center text-white text-2xl sm:text-4xl font-bold space-y-4">
             <p>Ragul B</p>
             <p>I'M Developer</p>
           </div>
@@ -212,12 +211,10 @@ function Home() {
   </div>
 </section>
 
-{/* Online Certification Section */}
 <section className="bg-gradient-to-b from-gray-950 to-gray-900 px-4 sm:px-6 lg:px-12 py-16 text-white">
   <p className="text-3xl sm:text-4xl font-extrabold text-center mb-10">Online Certifications</p>
 
   <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    {/* Java */}
     <div className="relative group bg-[#02142B] rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
       <img src={ja} alt="Java" className="w-full h-40 sm:h-48 object-contain bg-white" />
       <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-80 transition duration-300">
@@ -225,7 +222,6 @@ function Home() {
       </div>
     </div>
 
-    {/* VIT */}
     <div className="relative group bg-[#02142B] rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
       <img src="https://d2lk14jtvqry1q.cloudfront.net/media/small_Vellore_Institute_of_Technology_Business_School_VIT_BS_54186d8069_26f401a9aa_b4584782bc_2c9b4d4396.png"
         alt="VIT"
@@ -235,7 +231,6 @@ function Home() {
       </div>
     </div>
 
-    {/* Cloud */}
     <div className="relative group bg-[#02142B] rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
       <img src={cc} alt="Cloud" className="w-full h-40 sm:h-48 object-contain bg-white" />
       <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-80 transition duration-300">
@@ -281,6 +276,25 @@ function Home() {
     </span>
 
     <span className="relative group">
+      <img 
+        src={ej} 
+        alt="E-Jersey" 
+        className="rounded w-72 h-48 mt-3 cursor-pointer hover:scale-105 transition-transform duration-300" 
+      />
+      <p className="text-center mt-2 font-bold text-2xl text-red-700">E-Jersey-Shop</p>
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-80 transition duration-300">
+        <p className="text-white font-semibold text-lg">E-Jersey Shop</p>
+        <a 
+          href="https://github.com/ragulr7/E-jersey" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-white text-2xl mt-2"
+        >
+          🔗
+        </a>
+      </div>
+    </span>
+     <span className="relative group">
       <img 
         src={le} 
         alt="Leave Management" 
