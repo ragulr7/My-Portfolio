@@ -344,20 +344,27 @@ function Home() {
     Feel free to reach out for collaborations or inquiries!
   </p>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 justify-items-center">
-    <div className="bg-blue-950 flex items-center space-x-4 p-6 w-full max-w-xs rounded-lg">
-      <img src="https://static.vecteezy.com/system/resources/thumbnails/014/440/980/small_2x/email-message-icon-design-in-blue-circle-png.png" className="h-10 w-10" alt="Email Icon" />
-      <div>
-        <p className="text-green-500 font-bold">Email</p>
-        <p>ragul@gmail.com</p>
-      </div>
+ <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 justify-items-center">
+  <div className="bg-blue-950 flex items-center space-x-4 p-6 w-full max-w-xs rounded-lg">
+    <img 
+      src="https://static.vecteezy.com/system/resources/thumbnails/014/440/980/small_2x/email-message-icon-design-in-blue-circle-png.png" 
+      className="h-10 w-10 flex-shrink-0" 
+      alt="Email Icon" 
+    />
+    <div className="break-words overflow-hidden">
+      <p className="text-green-500 font-bold">Email</p>
+      <p >
+        ragul.balasubramaniam
+        @gmail.com
+      </p>
     </div>
+  </div>
 
     <div className="bg-blue-950 flex items-center space-x-4 p-6 w-full max-w-xs rounded-lg">
       <img src="https://static.vecteezy.com/system/resources/thumbnails/014/441/078/small/phone-call-icon-design-in-blue-circle-png.png" className="h-10 w-10" alt="Phone Icon" />
       <div>
         <p className="text-green-500 font-bold">Phone</p>
-        <p>+91 23456789</p>
+        <p>+91 8778933301</p>
       </div>
     </div>
 
