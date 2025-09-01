@@ -13,7 +13,6 @@ function Home() {
 
   return (
     <div className="flex flex-col md:flex-row h-screen font-sans relative">
-      {/* Sidebar Navigation */}
       <nav className="hidden md:flex md:w-1/4 lg:w-1/5 bg-black text-white flex-col justify-center items-center space-y-6 text-lg lg:text-xl font-semibold">
         <img
           src={pic}
@@ -34,7 +33,6 @@ function Home() {
         </a>
       </nav>
 
-      {/* Mobile Menu Button */}
       <div className="md:hidden absolute top-4 left-4 z-50">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -44,7 +42,6 @@ function Home() {
         </button>
       </div>
 
-      {/* Mobile Sidebar */}
       <div
         className={`fixed top-0 left-0 h-full w-3/4 max-w-xs bg-black text-white flex flex-col items-center py-10 space-y-6 text-lg transform ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
@@ -91,7 +88,6 @@ function Home() {
           </div>
         </section>
 
-        {/* About Section */}
         <section id="About" className="bg-gradient-to-b from-gray-950 to-gray-900 px-4 sm:px-6 py-16 text-white">
           <p className="text-3xl sm:text-4xl font-extrabold text-center text-cyan-400 mb-10">About Me</p>
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 bg-gray-800 bg-opacity-40 backdrop-blur-md rounded-2xl p-6 sm:p-8 shadow-lg border border-cyan-500">
@@ -110,13 +106,13 @@ function Home() {
               <div className="grid sm:grid-cols-2 gap-4 mt-6 text-xs sm:text-sm">
                 <ul className="space-y-2">
                   <li><span className="text-cyan-400 font-semibold">🎂 Birthday:</span> 22/04/2004</li>
-                  <li><span className="text-cyan-400 font-semibold">📞 Phone:</span> 1234567890</li>
+                  <li><span className="text-cyan-400 font-semibold">📞 Phone:</span> 8778933301</li>
                   <li><span className="text-cyan-400 font-semibold">📍 City:</span> Tiruppur</li>
                 </ul>
                 <ul className="space-y-2">
                   <li><span className="text-cyan-400 font-semibold">🔞 Age:</span> 21</li>
                   <li><span className="text-cyan-400 font-semibold">👨‍🎓 Degree:</span> B.Tech IT</li>
-                  <li><span className="text-cyan-400 font-semibold">📧 Email:</span> ragul@gmail.com</li>
+                  <li><span className="text-cyan-400 font-semibold">📧 Email:</span> ragul.balasubramaniam@gmail.com</li>
                 </ul>
               </div>
             </div>
