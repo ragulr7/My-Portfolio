@@ -6,6 +6,7 @@ import sb from "./assets/smartbin.png";
 import ja from "./assets/java.png"; 
 import cc from "./assets/cloud.png"; 
 import ej from "./assets/E-jersey.png"
+import cl from "./assets/Calc.png"; 
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -313,7 +314,26 @@ function Home() {
         </a>
       </div>
     </span>
-
+ 
+    <span className="relative group">
+      <img  
+        src={cl} 
+        alt="Calculator" 
+        className="rounded w-72 h-48 mt-3 cursor-pointer hover:scale-105 transition-transform duration-300" 
+      />
+      <p className="text-center mt-2 font-bold text-2xl text-red-700">Smart Calculator</p>
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-80 transition duration-300">
+        <p className="text-white font-semibold text-lg">Smart Calculator</p>
+        <a 
+          href="https://github.com/ragulr7/Calculator" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-white text-2xl mt-2"
+        >
+          🔗
+        </a>
+      </div>
+    </span>
 
     <span className="relative group">
       <img 
